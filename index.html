@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Website</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <br><br><br><br>
+        <text align="center">
+        <h1><b><u>Oasis Infobyte Internship Level 2 To-Do Website</u></b></h1>
+        </text>
+        <br><br><br><br>
+        <div class="img-container">
+            <img src="./assets/logo.png"/>
+        </div>
+
+    </header>
+
+    <!-- Main Area -->
+    <main>
+        <br>
+        <div class="input-container">
+            <div id="msg"><b>Add your incomplete tasks here!</b></div>
+            <br>
+            <form>
+                <label for="task"></label>
+                <input type="text" id="userinput" name="task" placeholder="e.g Pay Bills...">
+                <input type="text" id="namelist" name="namelist" placeholder="e.g Shopping List...">
+                <input type="button" value="Add" id="btn" onclick="tasklist()" title="✔️ Adds an item to list">
+                <button onclick="reset()" id="reset" title="🔃 Refreshes the page">Reset</button>
+            </form>
+            <br>
+            <p id="warning"></p>
+            <p id="warning1"></p> 
+        </div>
+
+        <!-- Container -->
+        <div id="containertodo">
+            <div class="todo"></div>
+            <div id="todolistbr" class="todolist"></div>
+        </div>
+    </main>
+</body>
+
+<!-- Javascript -->
+<script src="./main.js"></script>
+
+</html>
